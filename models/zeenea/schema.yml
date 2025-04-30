@@ -2,17 +2,19 @@
 version: 2
 
 models:
-    - name: RAW_CUSTOMERS
-      description: "Raw customer table"
+    - name: V_RAW_ORDERS
+      description: "Raw order table"
       columns:
-          - name: id
-          - name: first_name
-          - name: last_name
+          - name: ID
+          - name: USER_ID
+          - name: ORDER_DATE
+          - name: STATUS
           
-    - name: CUSTOMERS
-      description: "Customer table"
+    - name: V_ORDERS
+      description: "order table"
       columns:
-          - name: id
-          - name: first_name
-          - name: last_name
-          - name: first_order
+          - name: ORDER_ID
+          - name: CUSTOMER_ID
+          - name: ORDER_DATE
+          - name: STATUS
+          - name: AMOUNT
