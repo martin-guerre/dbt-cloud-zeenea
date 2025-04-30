@@ -2,15 +2,23 @@
 version: 2
 
 models:
-    - name: V_RAW_ORDERS
+    - name: RAW_ORDERS
       description: "Raw order table"
       columns:
           - name: ID
           - name: USER_ID
           - name: ORDER_DATE
           - name: STATUS
+
+    - name: STG_ORDERS
+      description: "Staging order table"
+      columns:
+          - name: ORDER_ID
+          - name: CUSTOMER_ID
+          - name: ORDER_DATE
+          - name: STATUS
           
-    - name: V_ORDERS
+    - name: ORDERS
       description: "order table"
       columns:
           - name: ORDER_ID
