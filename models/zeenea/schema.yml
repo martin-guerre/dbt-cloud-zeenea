@@ -1,0 +1,18 @@
+
+version: 2
+
+models:
+    - name: RAW_CUSTOMERS
+      description: "Raw customer table"
+      columns:
+          - name: id
+          - name: first_name
+          - name: last_name
+          
+    - name: CUSTOMERS
+      description: "Customer table"
+      columns:
+          - name: id
+          - name: first_name
+          - name: last_name
+          - name: first_order
